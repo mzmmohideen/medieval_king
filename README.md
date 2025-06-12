@@ -32,3 +32,31 @@ There are 6 classes of soldiers:
 
 ```python main.py```
 
+## Result:
+
+```
+$ python main.py 
+Enter your own Platoons:Spearmen#10;Militia#30;FootArcher#20;LightCavalry#1000;HeavyCavalry#10
+Enter your opponent Platoons:Militia#10;Spearmen#10;FootArcher#1000;LightCavalry#120;CavalryArcher#100
+2025-06-12 12:00:07,828 - INFO - Your Militia won over Enemies Spearmen!
+2025-06-12 12:00:07,828 - INFO - Your FootArcher lost against Enemies FootArcher!
+2025-06-12 12:00:07,828 - INFO - Your LightCavalry won over Enemies LightCavalry!
+2025-06-12 12:00:07,828 - INFO - Your Militia won over Enemies Spearmen!
+2025-06-12 12:00:07,828 - INFO - Winning Arrangements (platoons): Spearmen#10;Militia#30;FootArcher#20;HeavyCavalry#10;LightCavalry#1000
+Result: Spearmen#10;Militia#30;FootArcher#20;HeavyCavalry#10;LightCavalry#1000
+```
+
+## Sample Test Result
+```
+$ python -m unittest tests/test_main.py 
+2025-06-12 12:00:34,548 - INFO - Your Militia won over Enemies Spearmen!
+2025-06-12 12:00:34,548 - INFO - Your FootArcher lost against Enemies FootArcher!
+2025-06-12 12:00:34,548 - INFO - Your LightCavalry won over Enemies LightCavalry!
+2025-06-12 12:00:34,548 - INFO - Your Militia won over Enemies Spearmen!
+2025-06-12 12:00:34,548 - INFO - Winning Arrangements (platoons): Spearmen#10;Militia#30;FootArcher#20;HeavyCavalry#10;LightCavalry#1000
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+```
